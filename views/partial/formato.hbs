@@ -1,0 +1,51 @@
+<div class='container mt-5'>
+  <div class='row justify-content-center'>
+    <div class='col-12 col-md-5'>
+      <form class='g-3' id='form-product' action='/productosRoute/guardar' method='post'>
+
+        <div class='input-group mb-3'>
+          <span class='input-group-text'>Producto</span>
+          <input
+            type='text'
+            id='producto'
+            name='producto'
+            class='form-control'
+            placeholder='Producto'
+            aria-label='Producto'
+          />
+        </div>
+
+        <div class='input-group mb-3'>
+          <span class='input-group-text'>Precio</span>
+          <input
+            type='number'
+            id='precio'
+            name='precio'
+            class='form-control'
+            placeholder='9999.99'
+            aria-label='Precio'
+          />
+        </div>
+
+        <div class='input-group mb-3'>
+          <span class='input-group-text'>URL</span>
+          <input
+            type='text'
+            id='url'
+            name='url'
+            class='form-control'
+            placeholder='https://picsum.photos/'
+          />
+        </div>
+
+        <div>
+          <input type='hidden' name='form' value='true' />
+        </div>
+
+        <div class='col-12'>
+          <button class='btn btn-primary' type='submit'>Guardar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
